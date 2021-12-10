@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revemi</title>
+    <link href="/css/tailwind.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!--  Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="relative h-full">
+    <div class="entire-container">
+      <section class="header-section" id="header">
+        <div class="main-header bg-cover bg-fixed h-screen w-screen">
+          <!-- New Navigation Bar -->
+          <nav
+            role="navigation"
+            class="
+              flex
+              justify-between
+              items-center
+              lg:h-28
+              sm:h-16
+              bg-gradient-to-r
+              from-primary
+              to-green-700
+              text-white
+              relative
+            "
+          >
+            <a href="index.html" class="pl-6"
+              ><img
+                src="./Image-Assets/Logo.svg"
+                class="lg:w-full sm:w-1/2"
+                alt=""
+            /></a>
+            <div class="px-4 cursor-pointer md:hidden" id="bars">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </div>
+            <div
+              class="hidden md:block mr-4 p-5 space-x-4 z-10 text-gray-400"
+              id="menu"
+            >
+              <a
+                href="about.html"
+                class="hover:text-white transition duration-500 ease-in-out"
+                >About Us</a
+              >
+              <a
+                href="products.html"
+                class="hover:text-white transition duration-500 ease-in-out"
+                >Products</a
+              >
+              <a
+                href="sustain.html"
+                class="hover:text-white transition duration-500 ease-in-out"
+                >Sustainability</a
+              >
+              <a
+                href="value.html"
+                class="hover:text-white transition duration-500 ease-in-out"
+                >Value Chain</a
+              >
+              <a
+                href="contact.html"
+                class="hover:text-white transition duration-500 ease-in-out"
+                >Contact</a
+              >
+            </div>
+          </nav>
+
+          <!-- Image Slider -->
+          <div class="w-full h-full swiper mySwiper absolute z-auto">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="object-cover w-full h-full"
+                  src="https://images.unsplash.com/photo-1451440063999-77a8b2960d2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+                  alt="image"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="object-cover w-full h-full"
+                  src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                  alt="image"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="object-cover w-full h-full"
+                  src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- End of Image Slider -->
+        </div>
+        <div class="text-white text-center absolute z-50 lg:top-96 lg:right-96 sm:top-80">
+          <h1 class="text-4xl font-bold">Increasing Food Security</h1>
+          <p>Innovating, empowering and driving prosperity across Africa</p>
+        </div>
+      </section>
+      <section
+        class="small-about lg:px-40 lg:py-40 lg:mt-0 sm:px-20 sm:py-20 sm:mt-20"
+      >
+        <div class="main-ctn lg:grid grid-cols-2 md:block">
+          <div class="content lg:px-10 md:px-5 md:py-0">
+            <span class="text-primary"
+              ><small><strong>WHO WE ARE</strong> </small></span
+            >
+            <h2 class="font-bold lg:text-4xl md:text-3xl">The Revemi way</h2>
+            <p class="pt-3 text-1xl">
+              Revemi Trade is an integrated agrotech and agrocommodities trading
+              company with core values of Innovation, Teamwork, Reliability,
+              Integrity and Professionalism.
+            </p>
+            <button
+              class="
+                flex flex-row
+                bg-transparent
+                hover:bg-primary
+                transition
+                duration-500
+                ease-in-out
+                text-primary
+                font-regular
+                border border-primary
+                mt-4
+                p-2
+                hover:text-white hover:border-transparent
+                rounded
+              "
+            >
+              Learn More
+              <svg
+                class="w-6 h-6 pl-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="image lg:px-10 lg:py-0 md:px-5 md:mt-3 sm:px-0 sm:mt-3">
+            <img src="./Image-Assets/About-img.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section
+        class="
+          products-section
+          bg-products-bg bg-cover bg-gray-500 bg-blend-multiply
+          h-screen
+          w-screen
+          p-10
+          px-20
+          py-20
+        "
+      >
+        <div class="main-products-ctn p-5">
+          <div class="header-content pb-10">
+            <span class="text-white"><small>WHAT WE ARE</small></span>
+            <h2 class="font-bold lg:text-4xl text-white sm:text-2xl">
+              Products & Services
+            </h2>
+          </div>
+          <div class="products-select">
+            <div class="flex flex-row space-x-5">
+              <div class="box">
+                <img src="./Image-Assets/Product-Svgs/Marketplace.svg" alt="" />
+              </div>
+
+              <div class="box">
+                <img src="./Image-Assets/Product-Svgs/Aggregation.svg" alt="" />
+              </div>
+              <div class="box">
+                <img src="./Image-Assets/Product-Svgs/Farm mapper.svg" alt="" />
+              </div>
+              <div class="box">
+                <img
+                  src="./Image-Assets/Product-Svgs/Structured finance.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="flex flex-row space-x-5 mt-10">
+              <div class="box">
+                <img
+                  src="./Image-Assets/Product-Svgs/Farm Management.svg"
+                  alt=""
+                />
+              </div>
+              <div class="box">
+                <img src="./Image-Assets/Product-Svgs/Insurance.svg" alt="" />
+              </div>
+              <div class="box">
+                <img
+                  src="./Image-Assets/Product-Svgs/Technology & Data.svg"
+                  alt=""
+                />
+              </div>
+              <div class="box">
+                <img src="./Image-Assets/Product-Svgs/More.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="small-about lg:px-40 lg:py-40 sm:px-20 sm:py-20">
+        <div class="main-ctn lg:flex lg:flex-row space-x-4 sm:block">
+          <div class="content lg:px-10 sm:px-5">
+            <span class="text-primary uppercase"
+              ><small
+                ><strong>Our Sustainability Commitment</strong>
+              </small></span
+            >
+            <h2 class="font-bold lg:text-4xl md:text-3xl">
+              Meeting the needs of the present without compromising the future.
+            </h2>
+            <p class="pt-3 text-1xl">
+              The Revemi Way is our approach to creating a world-class,
+              multinational agriculture company. Driven by the highest level of
+              governance ...
+            </p>
+            <button
+              class="
+                flex flex-row
+                bg-transparent
+                hover:bg-primary
+                text-primary
+                font-regular
+                border border-primary
+                mt-4
+                p-2
+                hover:text-white hover:border-transparent
+                rounded
+              "
+            >
+              Learn More
+              <svg
+                class="w-6 h-6 pl-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="image bg-sustain-bg bg-cover px-20 py-20 sm:mt-10">
+            <div class="products-select">
+              <div class="flex flex-row space-x-5 w-full">
+                <div class="box">
+                  <img
+                    src="./Image-Assets/Sustainability/Economic.svg"
+                    alt=""
+                    class="w-24"
+                  />
+                </div>
+
+                <div class="box">
+                  <img
+                    src="./Image-Assets/Sustainability/Social.svg"
+                    alt=""
+                    class="w-24"
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./Image-Assets/Sustainability/Environmental.svg"
+                    alt=""
+                    class="w-24"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-row space-x-5 mt-5">
+                <div class="box">
+                  <img
+                    src="./Image-Assets/Sustainability/Cultual.svg"
+                    alt=""
+                    class="w-24"
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./Image-Assets/Sustainability/Security Aspects.svg"
+                    alt=""
+                    class="w-24"
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./Image-Assets/Sustainability/More.svg"
+                    alt=""
+                    class="w-24"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a href="#header">
+      <div
+      class="
+        bg-gradient-to-r
+        from-primary
+        to-green-700
+        rounded-full
+        h-10
+        w-10
+        flex
+        items-center
+        justify-center
+        fixed
+        float-right
+        right-10
+        bottom-10
+      "
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </div>
+  </a>
+      <section class="footer-section">
+        <div
+          class="
+            footer-main-ctn
+            bg-products-bg bg-cover bg-gray-900 bg-blend-multiply
+            px-20
+            py-20
+            text-white
+          "
+        >
+          <div
+            class="
+              footer-ctn
+              lg:grid lg:grid-cols-3 lg:gap-4
+              sm:block sm:text-left sm:space-y-4
+            "
+          >
+            <div class="grid-item sm:justify-center">
+              <img src="./Image-Assets/Logo.svg" alt="" />
+            </div>
+            <div class="grid-item">
+              <ul>
+                <li class="pb-3">
+                  <h4><strong>Quick Links</strong></h4>
+                </li>
+                <li>eki (Marketplace)</li>
+                <li>Products & Servivces</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div class="grid-item">
+              <ul>
+                <li class="flex mt-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-10 pr-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                  +234 801 234 5678
+                </li>
+                <li class="flex mt-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-10 pr-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  contact@revemi.com
+                </li>
+                <li class="flex mt-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-10 pr-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  Revemi Company P.O Box 1234 Lagos, Nigeria
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex justify-center pt-20"><strong>PARTNERS</strong></div>
+
+          <div class="buttom-ctn flex justify-center">
+            <div class="">
+              <img src="./Image-Assets/USAID.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tailwind CSS vertical carousel slider with indicators.</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!--  Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="w-full h-full swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            class="object-cover w-full h-full"
+            src="https://source.unsplash.com/user/erondu/3000x900"
+            alt="image"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="object-cover w-full h-full"
+            src="https://source.unsplash.com/collection/190727/3000x900"
+            alt="image"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="object-cover w-full h-full"
+            src="https://source.unsplash.com/collection/190728/3000x900"
+            alt="image"
+          />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="text-4xl text-primary z-10 font-bold absolute top-1/2">
+      <h1>Hello We are Back</h1>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

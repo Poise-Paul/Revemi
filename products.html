@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revemi - Products</title>
+    <link href="/css/tailwind.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="entire-container">
+      <section class="header-section h-screen" id="header">
+        <div
+          class="
+            main-header
+            bg-products-bg bg-cover
+            w-screen
+            h-4/5
+            bg-gray-700 bg-blend-multiply
+          "
+        >
+          <nav
+            role="navigation"
+            class="
+              flex
+              justify-between
+              items-center
+              lg:h-28
+              sm:h-16
+              bg-gradient-to-r
+              from-primary
+              to-green-700
+              text-white
+              relative
+            "
+          >
+            <a href="index.html" class="pl-6"
+              ><img
+                src="./Image-Assets/Logo.svg"
+                class="lg:w-full sm:w-1/2"
+                alt=""
+            /></a>
+            <div class="px-4 cursor-pointer md:hidden" id="bars">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </div>
+            <div
+              class="hidden md:block mr-4 p-5 space-x-4 z-10 text-gray-400"
+              id="menu"
+            >
+              <a
+                href="about.html"
+                class="hover:text-white transition duration-500 ease-in-out"
+                >About Us</a
+              >
+              <a href="products.html" class="text-white">Products</a>
+              <a
+                href="sustain.html"
+                class="hover:text-white transition duration-500 ease-in-out"
+                >Sustainability</a
+              >
+              <a
+                href="value.html"
+                class="hover:text-white transition duration-500 ease-in-out"
+                >Value Chain</a
+              >
+              <a
+                href="contact.html"
+                class="hover:text-white transition duration-500 ease-in-out"
+                >Contact</a
+              >
+            </div>
+          </nav>
+          <div class="text-center">
+            <div class="text-4xl text-center text-white py-20">
+              <h1>
+                <strong>PRODUCTS & SERVICES</strong>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about lg:px-40 sm:px-20 relative bottom-24">
+        <div class="container">
+          <div class="pb-8">
+            <div class="top-content">
+              <h1 class="text-4xl"><strong>Who We are</strong></h1>
+              <p>Lorem Ipsum dolor sit amet</p>
+            </div>
+          </div>
+
+          <div
+            class="
+              first-4-slider
+              grid
+              lg:grid-cols-4 lg:gap-4
+              sm:grid-cols-1 sm:gap-4
+              md:grid-cols-2 md:gap-4
+            "
+          >
+            <div class="cards">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img
+                  class="w-full"
+                  src="/Image-Assets/About-img.png"
+                  alt="Eki Market"
+                />
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2 text-primary">
+                    eki Market
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    Access to local and international markets.bto make life
+                    better
+                  </p>
+                </div>
+
+                <div class="buttons px-4 py-6">
+                  <button
+                    class="
+                      flex flex-row
+                      bg-primary
+                      text-white
+                      hover:bg-green-700
+                      font-regular
+                      lg:px-6 lg:py-4
+                      sm:px-2 sm:py-2
+                      hover:text-white hover:border-transparent
+                      rounded
+                    "
+                  >
+                    Visit Marketplace
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 pl-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Card -->
+
+            <div class="cards">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img
+                  class="w-full"
+                  src="/Image-Assets/About-img.png"
+                  alt="Eki Market"
+                />
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2 text-primary">
+                    Aggregation
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    Network of aggregation points in strategic locations aided
+                    by technology.
+                  </p>
+                </div>
+
+                <div class="buttons px-4 py-6">
+                  <button
+                    class="
+                      flex flex-row
+                      text-white
+                      hover:bg-primary hover:text-white
+                      font-regular
+                      lg:px-6 lg:py-4
+                      sm:px-2 sm:py-2
+                      border border-primary
+                      text-primary
+                      rounded
+                    "
+                  >
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 pl-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="cards">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img
+                  class="w-full"
+                  src="/Image-Assets/About-img.png"
+                  alt="Eki Market"
+                />
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2 text-primary">
+                    Farm Mapper
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    Access to local and international markets. To make lives
+                    better
+                  </p>
+                </div>
+
+                <div class="buttons px-4 py-6">
+                  <button
+                    class="
+                      flex flex-row
+                      text-white
+                      hover:bg-primary hover:text-white
+                      font-regular
+                      lg:px-6 lg:py-4
+                      sm:px-2 sm:py-2
+                      border border-primary
+                      text-primary
+                      rounded
+                    "
+                  >
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 pl-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Last Card -->
+            <div class="cards">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img
+                  class="w-full"
+                  src="/Image-Assets/About-img.png"
+                  alt="Eki Market"
+                />
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2 text-primary">
+                    Structured Finance
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    Structured financing and credit to farmers across the value
+                    chain.
+                  </p>
+                </div>
+
+                <div class="buttons px-4 py-6">
+                  <button
+                    class="
+                      flex flex-row
+                      text-white
+                      hover:bg-primary hover:text-white
+                      font-regular
+                      lg:px-6 lg:py-4
+                      sm:px-2 sm:py-2
+                      border border-primary
+                      text-primary
+                      rounded
+                    "
+                  >
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 pl-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img
+                  class="w-full"
+                  src="/Image-Assets/About-img.png"
+                  alt="Eki Market"
+                />
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2 text-primary">
+                    Farm Management
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    Structured financing and credit to farmers across the value
+                    chain.
+                  </p>
+                </div>
+
+                <div class="buttons px-4 py-6">
+                  <button
+                    class="
+                      flex flex-row
+                      text-white
+                      hover:bg-primary hover:text-white
+                      font-regular
+                      lg:px-6 lg:py-4
+                      sm:px-2 sm:py-2
+                      border border-primary
+                      text-primary
+                      rounded
+                    "
+                  >
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 pl-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img
+                  class="w-full"
+                  src="/Image-Assets/About-img.png"
+                  alt="Eki Market"
+                />
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2 text-primary">
+                    Insurance
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    Providing farmers with critical information and holistic
+                    farm management.
+                  </p>
+                </div>
+
+                <div class="buttons px-4 py-6">
+                  <button
+                    class="
+                      flex flex-row
+                      text-white
+                      hover:bg-primary hover:text-white
+                      font-regular
+                      lg:px-6 lg:py-4
+                      sm:px-2 sm:py-2
+                      border border-primary
+                      text-primary
+                      rounded
+                    "
+                  >
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 pl-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="cards sm:block">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img
+                  class="w-full"
+                  src="/Image-Assets/About-img.png"
+                  alt="Eki Market"
+                />
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2 text-primary">
+                    Technology & Data
+                  </div>
+                  <p class="text-gray-700 text-base">
+                    Protecting farmers and their investments from environmental
+                    and security...
+                  </p>
+                </div>
+
+                <div class="buttons px-4 py-6">
+                  <button
+                    class="
+                      flex flex-row
+                      text-white
+                      hover:bg-primary hover:text-white
+                      font-regular
+                      lg:px-6 lg:py-4
+                      sm:px-2 sm:py-2
+                      border border-primary
+                      text-primary
+                      rounded
+                    "
+                  >
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 pl-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Go -up -->
+      <a href="#header">
+        <div
+          class="
+            bg-gradient-to-r
+            from-primary
+            to-green-700
+            rounded-full
+            h-10
+            w-10
+            flex
+            items-center
+            justify-center
+            fixed
+            float-right
+            right-10
+            bottom-10
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 15l7-7 7 7"
+            />
+          </svg>
+        </div>
+      </a>
+      <!-- End Of Go up -->
+      <section class="footer-section">
+        <div
+          class="
+            footer-main-ctn
+            bg-products-bg bg-cover bg-gray-900 bg-blend-multiply
+            px-20
+            py-20
+            text-white
+          "
+        >
+          <div
+            class="
+              footer-ctn
+              lg:grid lg:grid-cols-3 lg:gap-4
+              sm:block sm:text-left sm:space-y-4
+            "
+          >
+            <div class="grid-item">
+              <img src="./Image-Assets/Logo.svg" alt="" />
+            </div>
+            <div class="grid-item">
+              <ul>
+                <li class="pb-3">
+                  <h4><strong>Quick Links</strong></h4>
+                </li>
+                <li>eki (Marketplace)</li>
+                <li>Products & Servivces</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div class="grid-item">
+              <ul>
+                <li class="flex mt-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-10 pr-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                  +234 801 234 5678
+                </li>
+                <li class="flex mt-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-10 pr-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  contact@revemi.com
+                </li>
+                <li class="flex mt-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-10 pr-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  Revemi Company P.O Box 1234 Lagos, Nigeria
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex justify-center pt-20"><strong>PARTNERS</strong></div>
+
+          <div class="buttom-ctn flex justify-center">
+            <div class="">
+              <img src="./Image-Assets/USAID.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
